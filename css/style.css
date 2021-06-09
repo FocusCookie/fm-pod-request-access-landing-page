@@ -172,6 +172,19 @@ button {
     width: 491px;
   }
 
+  body::after {
+    display: block;
+    background-image: url(../assets/desktop/bg-pattern-dots.svg);
+    background-size: cover;
+    content: " ";
+    height: 104px;
+    position: absolute;
+    left: 30px;
+    bottom: 0;
+    width: 232px;
+    z-index: -50;
+  }
+
   header {
     margin-top: 50px;
     margin-bottom: 144px;
