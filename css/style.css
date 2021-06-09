@@ -54,6 +54,10 @@ body::before {
   z-index: -100;
 }
 
+body::after {
+  transition: all 2s ease;
+}
+
 header {
   margin-top: 62px;
   margin-bottom: 17px;
@@ -261,5 +265,55 @@ button {
   }
   .logo-pocketcasts {
     height: 26px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  body {
+    padding: 0 165px;
+  }
+
+  body::before {
+    background-image: url(../assets/desktop/image-host.jpg);
+    background-size: contain;
+    background-position: right 130px;
+    background-repeat: no-repeat;
+    height: 770px;
+    opacity: 0.8;
+    width: 888px;
+  }
+
+  body::after {
+    background-image: url(../assets/desktop/bg-pattern-dots.svg);
+    position: absolute;
+    left: unset;
+    right: 0;
+    bottom: 78px;
+    width: 232px;
+    z-index: -50;
+  }
+
+  header {
+    margin: 102px 0;
+  }
+
+  article {
+    gap: 24px;
+  }
+
+  .content-wrapper {
+    width: 723px;
+    padding-top: 81px;
+  }
+
+  /* HELPERS */
+  .headline {
+    font-size: 52px;
+    line-height: 62px;
+  }
+
+  .content {
+    font-size: 18px;
+    line-height: 28px;
   }
 }
