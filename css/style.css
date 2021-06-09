@@ -1,0 +1,155 @@
+:root {
+  --color-primary: #54e6af;
+
+  --color-neutral-300: #121725;
+  --color-neutral-400: #2c344b;
+  --color-neutral-500: #5a668a;
+  --color-neutral-600: #c2cbe5;
+  --color-neutral-700: #fff;
+
+  --font-primary: Chivo;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-primary);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  color: var(--color-neutral-600);
+  -moz-osx-font-smoothing: grayscale; /*(For Firefox)*/
+  -webkit-font-smoothing: antialiased; /*(For Chrome and Safari)*/
+  backface-visibility: hidden;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background: var(--color-neutral-300);
+}
+
+body::before {
+  display: block;
+  background-image: url(../assets/mobile/image-host.jpg);
+  background-size: cover;
+  content: " ";
+  height: 667px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  opacity: 0.1;
+  width: 375px;
+  z-index: -100;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 62px;
+  margin-bottom: 57px;
+}
+
+section {
+  padding: 0 24px;
+  text-align: center;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.podcastlist {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 33px;
+  margin-bottom: 48px;
+  height: 17px;
+}
+
+.logo-spotify,
+.logo-apple {
+  height: 17px;
+}
+
+.logo-google {
+  height: 11px;
+}
+.logo-pocketcasts {
+  height: 15px;
+}
+
+.mail-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.logo {
+  height: 56px;
+  width: auto;
+}
+
+.mail-form > input,
+button {
+  background: var(--color-neutral-400);
+  border: none;
+  border-radius: 28px;
+  color: var(--color-neutral-700);
+  flex-grow: 2;
+  font-size: 14px;
+  line-height: 28px;
+  font-weight: 700;
+  padding: 9px 32px;
+}
+
+.mail-form > input:focus {
+  outline: none;
+}
+.mail-form > input::placeholder {
+  color: var(--color-neutral-700);
+  opacity: 0.5; /* Firefox */
+}
+
+.mail-form > button {
+  background: var(--color-primary);
+  color: var(--color-neutral-300);
+  font-size: 14px;
+  line-height: 28px;
+  font-weight: 700;
+}
+
+/* HELPERS */
+.text-uppercase {
+  text-transform: uppercase;
+}
+.headline {
+  font-size: 26px;
+  line-height: 38px;
+}
+
+.content {
+  font-size: 15px;
+  line-height: 25px;
+}
+
+.text-color-primary {
+  color: var(--color-primary);
+}
+.text-color-neutral-700 {
+  color: var(--color-neutral-700);
+}
