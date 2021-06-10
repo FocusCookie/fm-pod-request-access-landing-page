@@ -1,5 +1,6 @@
 :root {
   --color-primary: #54e6af;
+  --color-primary-bright: #b3ffe2;
 
   --color-neutral-300: #121725;
   --color-neutral-400: #2c344b;
@@ -109,7 +110,6 @@ section {
 .mail-form {
   display: flex;
   flex-direction: column;
-  gap: 16px;
 }
 
 .mail-form > input,
@@ -133,12 +133,17 @@ button {
   opacity: 0.5; /* Firefox */
 }
 
-.mail-form > button {
+.button {
   background: var(--color-primary);
   color: var(--color-neutral-300);
   font-size: 14px;
   line-height: 28px;
   font-weight: 700;
+  z-index: 100;
+  margin-top: 16px;
+}
+.button:hover {
+  background: var(--color-primary-bright);
 }
 
 /* HELPERS */
@@ -162,6 +167,31 @@ button {
   color: var(--color-neutral-700);
 }
 
+.mailError {
+  display: none;
+  font-family: Chivo;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  min-height: 14px;
+  color: #fb3e3e;
+  margin: 8px 0;
+  text-indent: 38px;
+}
+
+.mailError-mobile {
+  font-family: Chivo;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  color: #fb3e3e;
+  margin: 8px 0;
+  text-indent: 38px;
+}
+
+/* TABLETS */
 @media only screen and (min-width: 675px) {
   body {
     align-items: flex-start;
@@ -205,17 +235,16 @@ button {
 
   .content-wrapper {
     background: var(--color-neutral-300);
-    padding-top: 94px;
+    padding-top: 56px;
     width: 635px;
   }
 
   .logos-and-mailform,
-  section  {
+  section {
     display: flex;
     flex-direction: column-reverse;
-    margin-top: 40px;
-    gap: 64px;
-    width: 427px;
+    gap: 0;
+    margin-top: 38px;
   }
 
   .mail-form {
@@ -226,12 +255,14 @@ button {
     align-content: space-between;
     gap: 0;
     padding: 5px;
+    width: 427px;
   }
   .mail-form > input {
     flex-grow: 1000;
   }
-  .mail-form > button {
+  .button {
     padding: 9px 27px;
+    margin: 0;
   }
 
   /* HELPERS */
@@ -253,6 +284,7 @@ button {
     justify-content: space-between;
     height: 29px;
     width: 536px;
+    margin-top: 35px;
   }
 
   .logo-spotify,
@@ -266,9 +298,17 @@ button {
   .logo-pocketcasts {
     height: 26px;
   }
+
+  .mailError {
+    display: unset;
+  }
+  .mailError-mobile {
+    display: none;
+  }
 }
 
-@media only screen and (min-width: 1024px) {
+/* DESKTOP */
+@media only screen and (min-width: 1053px) {
   body {
     padding: 0 165px;
   }
@@ -303,7 +343,11 @@ button {
 
   .content-wrapper {
     width: 723px;
-    padding-top: 81px;
+    padding-top: 50px;
+  }
+
+  .podcastlist {
+    margin-top: 29px;
   }
 
   /* HELPERS */
