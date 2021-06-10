@@ -1,14 +1,13 @@
-# Frontend Mentor - Meet landing page solution
+# Frontend Mentor - Pod request access landing page
 
-This is a solution to the [Meet landing page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/meet-landing-page-rbTDS6OUR). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
+This is a solution to the [Pod request access landing page](https://www.frontendmentor.io/challenges/pod-request-access-landing-page-eyTmdkLSG). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## Table of contents
 
-- [Frontend Mentor - Meet landing page solution](#frontend-mentor---meet-landing-page-solution)
+- [Frontend Mentor - Pod request access landing page](#frontend-mentor---pod-request-access-landing-page)
   - [Table of contents](#table-of-contents)
   - [Overview](#overview)
     - [The challenge](#the-challenge)
-    - [Screenshot](#screenshot)
     - [Links](#links)
   - [My process](#my-process)
     - [Built with](#built-with)
@@ -25,12 +24,6 @@ Users should be able to:
 - View the optimal layout depending on their device's screen size
 - See hover states for interactive elements
 
-### Screenshot
-
-!["Desktop View"](./screenshots/desktop.png)
-!["Tablet View"](./screenshots/tablet.png)
-!["Desktop View"](./screenshots/mobile.png)
-
 ### Links
 
 - Solution URL: [Add solution URL here](https://github.com/FocusCookie/fm-meet-landing-page)
@@ -45,16 +38,13 @@ Users should be able to:
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
+- Vanilla JavaScript
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
 ### Useful resources
 
-- [CSS Tricks Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) - This helped me to figure out which flex options should I use in each device view. I really liked this pattern and will use it going forward.
-- [CSS Tricks Grid](https://css-tricks.com/snippets/css/complete-guide-grid/)
-- This helped my to build the splitting header section.
+- [How to add a button inside an input](https://stackoverflow.com/questions/15314407/how-to-add-button-inside-input) - This helped me to figure out how can I seperate and include the button from the input field via css.
 
 ## Author
 
