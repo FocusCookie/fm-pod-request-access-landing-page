@@ -26,8 +26,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/FocusCookie/fm-meet-landing-page)
-- Live Site URL: [Add live site URL here](https://focuscookie.github.io/fm-meet-landing-page/)
+- Solution URL: [Add solution URL here](https://github.com/FocusCookie/fm-pod-request-access-landing-page)
+- Live Site URL: [Add live site URL here](https://focuscookie.github.io/fm-pod-request-access-landing-page/)
 
 ## My process
 
